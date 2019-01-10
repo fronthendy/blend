@@ -1,0 +1,35 @@
+input:hover{
+  border-color: red;
+}
+
+input:focus{
+  background-color: #ccc;
+}
+
+ul li:nth{
+  background-color: red;
+}
+
+/*
+
+:hover
+:focus
+:nth-child()
+:nth-child(even)
+:nth-child(odd)
+:first-child
+:last-child
+
+ */
+
+header, section, footer{
+  border: 1px solid #ccc;
+}
+
+article{
+  border: 2px solid blue;
+}
+
+p span{
+  font-size: 50px;
+}

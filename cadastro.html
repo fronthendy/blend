@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de usuario</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+  </ul>
+  <form action="cadastro.html" method="post">
+    <label for="nomeCompleto">Nome completo</label>
+    <br>
+    <input type="text" name="nomeCompleto" id="nomeCompleto" required/>
+    <br>
+    <label for="email">Email</label> <br>
+    <input type="email" name="email" id="email" placeholder="maria@email.com" required>
+    <br>
+    <label for="senha">Senha</label><br>
+    <input type="password" name="senha" id="senha" required><br>
+    <label for="cinema">Você já foi ao cinema este ano?</label><br>
+    <label for="sim"><input type="radio" name="cinema" id="sim" value="sim" checked>SIM</label>
+    <label for="nao"><input type="radio" name="cinema" id="nao" value="não">NÂO</label>
+    <br>
+    <label for="generoFilme">Selecione seus gêneros preferidos:</label><br>
+    <label for="drama"><input type="checkbox" name="generoFilme" id="drama" value="drama">Drama</label> <br>
+    <label for="terror"><input type="checkbox" name="generoFilme" id="terror" value="terror">Terror</label> <br>
+    <label for="ficcao"><input type="checkbox" name="generoFilme"  id="ficcao" value="ficcao">Ficção</label> <br>
+    <label for="romance"><input type="checkbox" name="generoFilme" id="romance" value="romance">Romance</label> <br>
+    <label for="comedia"><input type="checkbox" name="generoFilme" id="comedia" value="comedia" checked>Comédia</label>
+    <br>
+    <label for="genero">Gênero</label><br>
+    <select name="genero">
+      <option selected disabled>Selecione uma opção</option>
+      <option value="feminino">Feminino</option>
+      <option value="masculino">Masculino</option>
+      <option value="não binário">Não binário</option>
+      <option value="N/A">N/A</option>
+    </select>
+    <br>
+    <label for="paisOrigem">País de origem</label><br>
+    <select name="paisOrigem">
+      <option selected disabled>Selecione um país</option>
+      <option value="brasil">Brasil</option>
+      <option value="argentina">Argentina</option>
+      <option value="angola">Angola</option>
+      <option value="canada">Canadá</option>
+    </select>
+    <br>
+    <label for="comentarios">Comentários</label> <br>
+    <textarea name="comentarios" id="comentarios" rows="3" cols="30">Aqui tem um texto padrão.</textarea>
+    <br>
+    <button type="reset">Limpar campos</button>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
